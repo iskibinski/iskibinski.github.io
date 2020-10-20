@@ -1,16 +1,14 @@
 # Name of your blog (this will show up at the top of your page and in the RSS feed)
-name: Embarrassing Myself on Twitter is Not Enough
+name: Still Working...
 
 # Short description (goes below the title; it will also be used in the RSS feed)
 description: puddle
 
 # Your name, as you want it to appear underneath each post and in the footer
-author: meanyhead
-
-author_twitter: meanyhead
+author: iskibinski
 
 # Your email if you want it to be linked on the contact page
-author_email: ichbineinski@gmail.com
+# author_email: nothing@yet.com
 
 # Uncomment if you are planning to run the blog in a subdirectory
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
@@ -18,14 +16,14 @@ author_email: ichbineinski@gmail.com
 #baseurl: /path/to/blog 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://meanyhead.github.io
+url: http://iskibinski.github.io
 
 #### Under the Hood Stuff #####
 
 # Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
 # If you use maroku (default engine) some of your generated pages may not validate or lint as html5
 # If you don't have it install it via gem install rdiscount
-markdown: kramdown
+# markdown: kramdown
 
 # Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
 permalink: pretty
