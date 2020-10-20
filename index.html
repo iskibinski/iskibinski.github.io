@@ -19,7 +19,7 @@ layout: default
 		<div class="entry">
             {{ post.content }}
         </div>
-        <time datetime="{{post.date|date:'%F'}}">{{post.date|date:"%-d %B %Y"}}</time>
+        <time datetime="{{page.date|date:"%F"}}">{{post.date|date:"%-d %B %Y"}}</time>
 	</article>
     {% if post != paginator.posts.last %}
         <hr/>
