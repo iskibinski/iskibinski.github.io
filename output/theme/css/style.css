@@ -1,0 +1,11 @@
+.hentry {
+	position: relative;
+	top: -225px;
+}
+
+.entry-background {
+	background-size: cover;
+	opacity:0.33;
+	width: 400px;
+	height: 225px;
+}
