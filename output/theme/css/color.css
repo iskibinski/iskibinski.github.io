@@ -1,0 +1,16 @@
+body {
+	background-image: linear-gradient(to bottom right, #825025, #6E5273);
+	color: #cdcdcd;
+}
+
+a {
+	color: #bbccfd;
+}
+
+.preview-container a {
+	color: #cdcdcd;
+}
+
+.preview-content-container {
+	background-image: linear-gradient(to bottom right, rgba(0,0,0,0.67), rgba(255,255,255,0));
+}

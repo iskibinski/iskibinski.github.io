@@ -1,0 +1,23 @@
+body {
+	background-image: linear-gradient(to bottom right, #825025, #6E5273);
+	color: #cdcdcd;
+}
+
+a {
+	color: #bbccfd;
+}
+
+.entry-title {
+	background-image: linear-gradient(to bottom right, #8cdada, #fbbacd);
+	color: #5d5d5d;
+}
+
+.preview-container a {
+	color: #cdcdcd;
+}
+
+.preview-content-container {
+	background-image: linear-gradient(to bottom right, rgba(0,0,0,0.67), rgba(255,255,255,0));
+}
+
+#8D483C,#6E5273,#0A666C,#426530,#825025

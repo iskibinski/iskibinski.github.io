@@ -5,11 +5,13 @@ AUTHOR = 'Isaac Skibinski'
 SITENAME = 'Isaac Skibinski'
 SITEURL = ''
 
+THEME = 'themes/ppe'
+
 PATH = 'content'
 
 TIMEZONE = 'America/Los_Angeles'
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -36,10 +38,11 @@ DEFAULT_PAGINATION = False
 ARTICLE_URL = '{slug}'
 ARTICLE_SAVE_AS = '{slug}/index.html'
 
-PLUGIN_PATHS = ['../../otherSrc/pelican-plugins']
+PLUGIN_PATHS = ['../../otherSrc/pelican-plugins', 'plugins']
 PLUGINS = ['representative_image', 'advthumbnailer'] # 'clean_summary'
 
-CLEAN_SUMMARY_MAXIMUM = 0
-CLEAN_SUMMARY_MINIMUM_ONE = False
-
 DISPLAY_CATEGORIES_ON_MENU = False
+
+# It's a hack but I don't need a whole plugin for this:
+from datetime import date
+BUILD_DATE = date.today()

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+
+{% for article in articles_page.object_list %}
+    <div class='preview-container'>
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+            <div class='preview-background' style="background-image: url(' {{ SITEURL + article.featured_image | thumbnail("1920x400")}}');">
+                <div class="preview-content-container">
+                    <div class= "preview-content">
+                        <h2 class="preview-title">{{ article.title }}</h2>
+                        <h3 class="preview-summary">{{ article._summary }}</h3>
+                        <span class="invisible"><img src='{{ SITEURL + article.featured_image | thumbnail("1920x400") }}'/></span>
+                        <h3>{{ article.date|strftime('%Y') }}</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+{% endfor %}
+
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+</section><!-- /#content -->
+{% endblock content %}
