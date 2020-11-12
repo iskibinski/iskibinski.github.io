@@ -39,15 +39,17 @@ h3, h4 {
 
 .preview-background {
 	background-size: cover;
-	height: 200px;
+/* 	height: 200px; */
 }
 
 .preview-content-container {
-	height: 200px;
+/* 	height: 200px; */
+	border-style: solid;
+	border-width: 0.5rem;
 }
 
 .preview-content {
-	padding: 1px 1rem;
+	padding: 1px 0.75rem;
 }
 
 .entry-content img {

@@ -1,5 +1,6 @@
 body {
-	background-image: linear-gradient(to bottom, #d1ce9b, #fbbdb2, #eabee9);
+	background: #d1ce9b;
+/* 	background-image: linear-gradient(to bottom, #d1ce9b, #fbbdb2, #eabee9); */
 	color: #5d5d5d;
 }
 
@@ -22,9 +23,11 @@ a {
 
 .preview-content-container:hover {
 	background-color: rgba(0,0,0,0);
-	text-shadow: -2px -2px 0 #5d5d5d, 2px -2px 0 #5d5d5d, -2px 2px 0 #5d5d5d, 2px 2px 0 #5d5d5d, -2px 0px #5d5d5d, 2px 0px #5d5d5d, 0px -2px #5d5d5d, 0px 2px #5d5d5d
+	text-shadow: -2px -2px 0 #5d5d5d, 2px -2px 0 #5d5d5d, -2px 2px 0 #5d5d5d, 2px 2px 0 #5d5d5d, -2px 0px #5d5d5d, 2px 0px #5d5d5d, 0px -2px #5d5d5d, 0px 2px #5d5d5d;
+  border-color: #5c5c5c;
 }
 
 .preview-content-container {
+	border-color: rgba(0,0,0,0);
 	background-color: rgba(0,0,0,0.4);
 }
