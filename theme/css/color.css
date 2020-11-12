@@ -13,18 +13,18 @@ a {
 }
 
 .preview-container a {
-	color: #cdcdcd;
+	color: #fff;
 }
 
-.preview-container {
-	text-shadow: -1px -1px 0 #5d5d5d, 1px -1px 0 #5d5d5d, -1px 1px 0 #5d5d5d, 1px 1px 0 #5d5d5d, -1px 0px #5d5d5d, 1px 0px #5d5d5d, 0px -1px #5d5d5d, 0px 1px #5d5d5d
-}
+/*.preview-container {
+ 	text-shadow: -1px -1px 0 #5d5d5d, 1px -1px 0 #5d5d5d, -1px 1px 0 #5d5d5d, 1px 1px 0 #5d5d5d, -1px 0px #5d5d5d, 1px 0px #5d5d5d, 0px -1px #5d5d5d, 0px 1px #5d5d5d 
+}*/
 
 .preview-content-container:hover {
 	background-color: rgba(0,0,0,0);
+	text-shadow: -2px -2px 0 #5d5d5d, 2px -2px 0 #5d5d5d, -2px 2px 0 #5d5d5d, 2px 2px 0 #5d5d5d, -2px 0px #5d5d5d, 2px 0px #5d5d5d, 0px -2px #5d5d5d, 0px 2px #5d5d5d
 }
 
 .preview-content-container {
-	background-color: rgba(0,0,0,0.33);
-	transition: background-color 0.5s;
+	background-color: rgba(0,0,0,0.4);
 }
