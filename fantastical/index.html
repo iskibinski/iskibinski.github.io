@@ -20,35 +20,30 @@
         <nav id="menu"><ul>
         </ul></nav><!-- /#menu -->
 <section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="/fantastical" rel="bookmark"
-         title="Permalink to Fantastical">Fantastical</a></h2>
+  <h2 class="entry-title">Fantastical</h2>
  
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2019-02-05T10:20:00-08:00">
-      Tue 05 February 2019
-    </time>
-    <address class="vcard author">
-      By           <a class="url fn" href="/author/isaac-skibinski.html">Isaac Skibinski</a>
-    </address>
-    <div class="category">
-        Category: <a href="/category/misc.html">misc</a>
-    </div>
-  </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>Lua map script for Civilization VI.
-<img alt="screenshot" src="/images/fantastical.jpg"></p>
+    <p>Voronoi-based Lua map script for Civilization VI.</p>
+<p>The map space is divided into voronoi polygons. Ocean rifts and continents are selected from those polygons. The polygons are further divided into subpolygons. The subpolygons are conglomerated into regions that are populated with a limited set of possible terrains.</p>
+<p>The climate space (temperature on one axis, rainfall on the other) is also divided into voronoi polygons. Each region is assigned a climate-space polygon. If the user selects the "realistic climate" option, the regions are assigned a climate-space polygon that's nearest to its latitude's temperature and rainfall along a curve. If the option for realistic climate is off, each region is simply assigned a random climate-space polygon.</p>
+<p><img alt="climate space" src="/images/climategraph.png"></p>
+<figcaption>temperature is the x-axis, rainfall the y-axis</figcaption>
+
+<p>Mountain ranges are created along contiguous sequences of polygon edges.</p>
+<p>Rivers ignore polygons and subpolygons, drawn either from coastal or hill tiles by randomly choosing right or left after every segment (in Civilization VI, rivers are on the edges between hexagonal tiles). For each river actually put on the map, a large number of randomly drawn rivers are attempted, and the one that best meets a number of criteria (length, the rainfall and number of hill or mountain tiles at the source, etc) is chosen.</p>
+<p><a href="https://github.com/eronoobos/Civ6FantasticalMapScript">GitHub repository</a></p>
+<p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1364181027">Steam Workshop</a></p>
+<p><a href="https://forums.civfanatics.com/resources/fantastical.26821">CivFanatics resource</a></p>
+<p><img alt="screenshot" src="/images/fantastical.jpg"></p>
   </div><!-- /.entry-content -->
 </section>
-        <footer id="contentinfo" class="body">
+<!--         <footer id="contentinfo" class="body">
                 <address id="copyright" class="vcard body">
                 ©  Isaac Skibinski 2020
                 </address>
                 <address id="about" class="vcard body">
                 Powered by <a href="https://getpelican.com/">Pelican</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+                </address>
+        </footer> -->
 </body>
 </html>

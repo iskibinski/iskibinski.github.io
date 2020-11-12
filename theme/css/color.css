@@ -1,16 +1,30 @@
 body {
-	background-image: linear-gradient(to bottom right, #825025, #8D483C);
-	color: #cdcdcd;
+	background-image: linear-gradient(to bottom, #d1ce9b, #fbbdb2, #eabee9);
+	color: #5d5d5d;
 }
 
 a {
-	color: #B7D2CE;
+	color: #0e6976;
+}
+
+.entry-title {
+	background-image: linear-gradient(to right, rgb(24.33% 40.58% 26.95%), rgb(6.65% 41.35% 42.34%), rgb(24.03% 38.34% 53.3%));
+	color: #cdcdcd;
 }
 
 .preview-container a {
 	color: #cdcdcd;
 }
 
+.preview-container {
+	text-shadow: -1px -1px 0 #5d5d5d, 1px -1px 0 #5d5d5d, -1px 1px 0 #5d5d5d, 1px 1px 0 #5d5d5d, -1px 0px #5d5d5d, 1px 0px #5d5d5d, 0px -1px #5d5d5d, 0px 1px #5d5d5d
+}
+
+.preview-content-container:hover {
+	background-color: rgba(0,0,0,0);
+}
+
 .preview-content-container {
-	background-image: linear-gradient(to bottom right, rgba(0,0,0,0.67), rgba(255,255,255,0));
+	background-color: rgba(0,0,0,0.33);
+	transition: background-color 0.5s;
 }
