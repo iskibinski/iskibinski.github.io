@@ -13,14 +13,45 @@ a {
 }
 
 .preview-container a {
-	color: #d4d4d4;
+	color: black;
 }
 
 .preview-content-container:hover {
 	background-color: rgba(0,0,0,0);
-	text-shadow: -2px -2px 0 #3b3b3b, 2px -2px 0 #3b3b3b, -2px 2px 0 #3b3b3b, 2px 2px 0 #3b3b3b, -2px 0px #3b3b3b, 2px 0px #3b3b3b, 0px -2px #3b3b3b, 0px 2px #3b3b3b;
+	text-shadow: -2px -2px 0 #919191, 2px -2px 0 #919191, -2px 2px 0 #919191, 2px 2px 0 #919191, -2px 0px #919191, 2px 0px #919191, 0px -2px #919191, 0px 2px #919191;
 }
 
 .preview-content-container {
-	background-color: rgba(0,0,0,0.25);
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+
+	body {
+	 	background-image: linear-gradient(to bottom, #003da3, #67037f, #8a0046); 
+		color: #dfcdff;
+	}
+
+	a {
+		color: #00f78c;
+	}
+
+	.entry-title {
+		background-image: linear-gradient(to right, #ffcd00, #9ee92c, #00f78c);
+		color: #004b00;
+	}
+
+	.preview-container a {
+		color: white;
+	}
+
+	.preview-content-container:hover {
+		background-color: rgba(0,0,0,0);
+		text-shadow: -2px -2px 0 #5e5e5e, 2px -2px 0 #5e5e5e, -2px 2px 0 #5e5e5e, 2px 2px 0 #5e5e5e, -2px 0px #5e5e5e, 2px 0px #5e5e5e, 0px -2px #5e5e5e, 0px 2px #5e5e5e;
+	}
+
+	.preview-content-container {
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+
 }
