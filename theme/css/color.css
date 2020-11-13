@@ -1,15 +1,15 @@
 body {
  	background-image: linear-gradient(to bottom, #ffcd00, #9ee92c, #00f78c); 
-	color: #3b3b3b;
+	color: #004b00;
 }
 
 a {
-	color: #004b00;
+	color: #003da3;
 }
 
 .entry-title {
 	background-image: linear-gradient(to right, #003da3, #67037f, #8a0046);
-	color: #d4d4d4;
+	color: ##dfcdff;
 }
 
 .preview-container a {
