@@ -1,23 +1,23 @@
 body {
 	font-family: sans-serif;
-	margin: 1em 1em 1em 1em;
+	margin: 1em 1em 0em 1em;
 }
 
 a {
 	text-decoration: underline;
 }
 
-h1, h2, h3, h4 {
-	font-family: "MxPlus IBM VGA 9x16";
+h1 {
+	font-family: "Peter Obscure";
+	font-size: 32pt;
 }
 
-h1, h2 {
+h2 {
+	margin: 1rem 0rem;
+	font-family: "MxPlus IBM VGA 9x16";
 	font-size: 24pt;
 }
 
-h3, h4 {
-	font-size: 16pt;
-}
 
 #banner a {
 	text-decoration: none;
@@ -39,17 +39,14 @@ h3, h4 {
 
 .preview-background {
 	background-size: cover;
-/* 	height: 200px; */
 }
 
 .preview-content-container {
 /* 	height: 200px; */
-	border-style: solid;
-	border-width: 0.5rem;
 }
 
 .preview-content {
-	padding: 1px 0.75rem;
+	padding: 1px 1rem;
 }
 
 .entry-content img {
