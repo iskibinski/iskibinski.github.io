@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "iA Writer Quattro V Regular", sans-serif;
 	margin: 1em 1em 0em 1em;
 }
 
@@ -11,14 +11,17 @@ a {
 	text-decoration: underline;
 }
 
+h1, h2 {
+	font-family: "Nitti";
+}
+
 h1 {
-	font-family: "Peter Obscure";
 	font-size: 32pt;
+	font-weight: lighter;
 }
 
 h2 {
 	margin: 1rem 0rem;
-	font-family: "MxPlus IBM VGA 9x16";
 	font-size: 24pt;
 }
 
